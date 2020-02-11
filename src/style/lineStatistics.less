@@ -1,0 +1,382 @@
+.line-details{
+	height: 100%;
+	.line-name{
+		height: 40px;
+		width: 100%;
+		line-height: 40px;
+		font-size: 14px;
+		margin-left: 4px;
+		.title{
+			color: #26fff8;
+		}
+		.name{
+			color: #fff;
+		}
+		.go-back{
+			position: relative;
+			float: right;
+			margin-right: 20px;
+			color: #26fff8;
+		}
+		.go-back::before{
+			content: '';
+			display: inline-block;
+			    width: 14px;
+			    height: 12px;
+			    position: absolute;
+			    left: -20px;
+			    top: 12px;
+			background: url('../assets/imgaes/go-back.png');
+			background-size: cover;
+		}
+	}
+	// 杆塔台账模块CSS
+	.tower-parameter{
+		width: 100%;
+		height: 218px;
+		position: relative;
+		.title {
+		  font-size: 20px;
+		  position: relative;
+		  color: #fff;
+		  padding-left: 24px;
+		}
+		.title::before {
+		  content: '';
+		  display: inline-block;
+		  width: 20px;
+		  height: 20px;
+		  position: absolute;
+		  left: 0;
+		  top: 2px;
+		  background: url(../assets/imgaes/title-bg.png);
+		}
+		.standing-content {
+		  .list {
+		    font-size: 14px;
+		    margin-top: 10px;
+
+		    li {
+		      margin-top: 10px;
+
+		      span {
+		        color: #fff;
+		      }
+		    }
+		  }
+
+		  label {
+		    color: #26fff8;
+		    display: inline-block;
+		    width: 146px;
+		    text-align: right;
+		  }
+		}
+	}
+	// 线路台账模块CSS
+	.standing-book{
+		width: 100%;
+		height: 218px;
+		position: relative;
+		.title{
+			font-size: 20px;
+			position: relative;
+			color: #fff;
+			padding-left: 24px;
+		}
+		.title::before{
+			content: '';
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			left: 0;
+			top: 2px;
+			background: url(../assets/imgaes/title-bg.png);
+		}
+		.standing-content{
+			.list{
+				font-size: 14px;
+				margin-top: 10px;
+				li{
+					margin-top: 20px;
+					span{
+						color: #fff;
+					}
+				}
+			}
+			label{
+				color: #26fff8;
+				display: inline-block;
+				width: 146px;
+				text-align: right;
+			}
+		}
+	}
+	.standing-book::after,
+	.Hidden-trouble-statistical::after,
+	.tower-parameter::after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 99;
+		background: url('../assets/imgaes/bottom-line.png');
+		background-size: cover;
+	}
+	// 缺陷模块CSS
+	.defects{
+		position: relative;
+		.defects-title{
+			// margin-top: 12px;
+			height: 40px;
+			line-height: 40px;
+			width: 100%;
+		}
+		.title-text {
+			display: inline-block;
+			font-size: 20px;
+			position: relative;
+			color: #fff;
+			padding-left: 24px;
+		}
+		.clear{
+			clear: both;
+		}
+		.title-tab{
+			display: inline-block;
+			position: absolute;
+			right: 24px;
+
+			.tab-item{
+				position: relative;
+				display: inline-block;
+				font-size: 14px;
+				color: #9cc7fb;
+				margin: 0 12px;
+			}
+			.tab-item:nth-child(2)::after {
+			  content: '';
+			  display: inline-block;
+			  width: 1px;
+			  height: 16px;
+			  position: absolute;
+			  left: -12px;
+			  top: 12px;
+			  background-color: #9cc7fb;
+			}
+			.tab-item:last-child::after {
+			  content: '';
+			  display: inline-block;
+			  width: 1px;
+			  height: 16px;
+			  position: absolute;
+			  left: -12px;
+			  top: 12px;
+			  background-color: #9cc7fb;
+			}
+		}
+		.tab-item.active {
+		  font-size: 14px;
+		  font-weight: normal;
+		  font-stretch: normal;
+		  letter-spacing: 1px;
+		  color: #ffffff;
+		  text-align: center;
+		}
+		.title-text::before {
+			content: '';
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			left: 0;
+			top: 10px;
+			background: url(../assets/imgaes/title-bg.png);
+		}
+		.tab-content{
+			height: 228px;
+			.content-item{
+				height: 100%;
+			}
+		}
+	}
+
+	.Hidden-trouble-statistical{
+		position: relative;
+		height: 268px;
+
+		.clear{
+			clear: both;
+		}
+		.tab-tilte {
+		  width: 100%;
+		}
+		.tab-tilte li {
+		  position: relative;
+		  float: left;
+		  height: 40px;
+		  line-height: 40px;
+		  text-align: center;
+		  cursor: pointer;
+		  color: #9cc7fb;
+		  font-size: 18px;
+		  margin-right: 26px;
+		}
+		.tab-tilte li:last-child{
+			margin-left: 18px;
+
+		}
+		.tab-tilte li:last-child::after {
+		  content: '';
+		  display: inline-block;
+		  width: 2px;
+		  height:18px;
+			position: absolute;
+			left: -22px;
+			top: 12px;
+			background-color: #9cc7fb;
+		}
+		 /* 点击对应的标题添加对应的背景颜色 */
+		 .tab-tilte .active {
+		   font-size: 20px;
+		   font-weight: normal;
+		   font-stretch: normal;
+		   letter-spacing: 1px;
+		   color: #ffffff;
+		   text-align: center;
+		   text-shadow:5px 2px 6px #000;
+		 }
+		  .tab-content{
+		 	.hazard-statistics{
+				 width: 100%;
+				 .grid-content{
+					 width: 100%;
+				 }
+				 .list-item {
+				   width: 100%;
+				   height: 34px;
+				   line-height: 34px;
+				   color: #fff;
+				   margin-left: 12px;
+
+				   span {
+				     display: inline-block;
+				     width: 49%;
+				     color: #fff;
+				     font-size: 14px;
+				   }
+
+				   .name::before {
+				     content: '';
+				     display: inline-block;
+				     width: 14px;
+				     height: 15px;
+				     background: url('../assets/imgaes/positioning.png');
+				     background-size: cover;
+				     margin-right: 10px;
+				   }
+				 }
+
+				 .on {
+				   background-color: #041e4e;
+				 }
+				 .title {
+				   height: 40px;
+				   line-height: 40px;
+
+				   .title-text {
+				     color: #fff;
+				     font-size: 16px;
+				   }
+				 }
+			 }
+
+		  }
+	}
+	.Hidden-trouble-statistical{
+		.sear-item {
+			float: left;
+			height: 40px;
+			margin-right: 24px;
+			.sear-btn{
+				width: 82px;
+				height: 28px;
+				background-color: #083279;
+				border: solid 1px #26fff7;
+				font-size: 14px;
+				color: #fff;
+				line-height: 28px;
+				letter-spacing:4px;
+			}
+		}
+		label {
+		float: left;
+		  width: 56px;
+		  height: 100%;
+		  font-family: MicrosoftYaHei;
+		  font-size: 14px;
+		  font-weight: normal;
+		  font-stretch: normal;
+		  line-height: 30px;
+		  letter-spacing: 0px;
+		  color: #26e1ff;
+		  margin-right: 8px;
+		}
+		.el-row{
+			width: 100%;
+		}
+		.el-select {
+		  width: 166px !important;
+		  height: 30px !important;
+		  background-blend-mode: normal,
+		    normal;
+		  margin-left: 2px;
+		}
+
+		.el-input--suffix.el-input {
+		  height: 30px !important;
+
+		}
+
+		.el-select .el-input__inner {
+		  -webkit-appearance: none;
+		  border-radius: 0 !important;
+		  background: #051d4a !important;
+
+		  border: solid 1px #0f3d7e !important;
+		  height: 30px !important;
+		  line-height: 30px !important;
+		  color: #26e1ff;
+		  padding: 0 15px;
+
+
+		}
+
+		.el-input__icon {
+		  line-height: 30px;
+		}
+
+		.el-select-dropdown__item {
+		  color: #26e1ff;
+
+		}
+
+		.el-select-dropdown {
+		  background-color: #051d4a !important;
+		  border: solid 1px #0f3d7e !important;
+		}
+
+		.el-select-dropdown__item.hover,
+		.el-select-dropdown__item:hover {
+		  background-color: #051d4a !important;
+		}
+		.table{
+			width: 100%;
+
+		}
+	}
+}

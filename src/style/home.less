@@ -1,0 +1,274 @@
+@import "./reset.less";
+
+.home {
+  width: 100%;
+  height: 100%;
+  background: url('../assets/imgaes/bg_img.png');
+
+  .wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .center-wrap {
+      position: relative;
+      height: 100%;
+      margin: 0 960px 0 950px;
+
+      .manager {
+        position: absolute;
+        bottom: 1%;
+        left: 1%;
+      }
+    }
+
+    .left-wrap {
+      position: absolute;
+      width: 950px;
+      height: 100%;
+      left: 0;
+      top: 0;
+
+      .left-top {
+        width: 940px;
+        height: 255px;
+        margin: 10px 0 0 10px;
+        background: url('../assets/imgaes/bg1_image.png');
+
+        .line-num {
+          margin-left: 10px;
+        }
+
+        .item {
+          position: relative;
+          float: left;
+          width: 136px;
+          height: 113px;
+          //   border: 1px solid #fff;
+          margin-top: 82px;
+          margin-right: 20px;
+          text-align: center;
+
+          .num {
+            font-size: 34px;
+            color: #fff;
+            //   text-shadow: 2px 3px 2px #011b94
+          }
+
+          .unit {
+            font-size: 18px;
+            color: #26e1ff;
+            margin-left: 7px;
+          }
+
+          .totality {
+            font-size: 16px;
+            color: #fff;
+            margin-top: 18px;
+            background: url('../assets/imgaes/num-bg.png');
+          }
+
+          .bg-img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            img {
+              width: 100%;
+              height: 100%;
+
+            }
+          }
+        }
+
+        .item::before {
+          content: '';
+          display: inline-block;
+          width: 30px;
+          height: 1px;
+          background-color: #0c3b73;
+          position: absolute;
+          left: 56px;
+          top: 50px;
+        }
+
+      }
+
+      .left-chart {
+        position: relative;
+
+        .chart-top,
+        .chart-center,
+        .chart-bottom {
+          height: 260px;
+          margin-top: 10px;
+        }
+
+        .left-bg {
+          margin-left: 10px;
+          float: left;
+          width: 465px;
+          height: 260px;
+          background: url('../assets/imgaes/bg2_image.png')
+        }
+
+        .right-bg {
+          margin-left: 10px;
+          float: left;
+          width: 465px;
+          height: 260px;
+          background: url('../assets/imgaes/bg3_imgae.png')
+        }
+
+        .icon {
+          position: absolute;
+          left: 470px;
+          top: 0;
+          width: 18px;
+          height: 18px;
+
+        }
+
+      }
+    }
+
+    .right-wrap {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 960px;
+      height: 100%;
+
+      .management-box {
+        position: relative;
+
+        .management-top,
+        .management-bottom {
+          height: 523px;
+          margin-top: 10px;
+
+          .management {
+            width: 310px;
+            height: 523px;
+            float: left;
+          }
+
+          .equipment {
+            float: left;
+            width: 629px;
+            height: 523px;
+
+            background: url('../assets/imgaes/equipment-bg.png');
+            background-size: cover;
+            margin-right: 10px;
+          }
+
+          .threeSpans {
+            background: url('../assets/imgaes/threeSpans-bg.png');
+            background-size: cover;
+            margin-right: 10px;
+          }
+
+          .coverage {
+            float: left;
+            width: 310px;
+            height: 523px;
+
+            background: url('../assets/imgaes/theLayer-bg.png');
+            background-size: cover;
+
+          }
+
+          .fault {
+            background: url('../assets/imgaes/positioning-bg.png');
+            margin-right: 10px;
+            background-size: cover;
+          }
+
+          .features {
+            background: url('../assets/imgaes/features-bg.png');
+            margin-right: 10px;
+            background-size: cover;
+          }
+
+          .bookmarks {
+            background: url('../assets/imgaes/bookmarks-bg.png');
+            background-size: cover;
+          }
+
+        }
+
+        .left-icon {
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: 306px;
+          top: 528px;
+        }
+
+        .right-icon {
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          right: 317px;
+          top: 519px;
+        }
+      }
+    }
+
+    .title {
+      position: relative;
+      display: inline-block;
+      height: 20px;
+      font-family: FZLTZCHK--GBK1-0;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 30px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      padding-left: 24px;
+    }
+
+    .title::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 20px;
+      background: url('../assets/imgaes/title-bg.png');
+      position: absolute;
+      left: 4px;
+      top: 6px;
+
+
+    }
+
+    .title {
+      position: relative;
+      display: inline-block;
+      height: 20px;
+      font-family: FZLTZCHK--GBK1-0;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 30px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      padding-left: 24px;
+    }
+
+    .title::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 20px;
+      background: url('../assets/imgaes/title-bg.png');
+      position: absolute;
+      left: 4px;
+      top: 6px;
+
+
+    }
+  }
+}

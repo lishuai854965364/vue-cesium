@@ -1,0 +1,211 @@
+@import "variable";
+
+.equipment-wrap {
+  .search {
+    position: relative;
+    width: 606px;
+    height: 30px;
+    margin-top: 10px;
+    background-image: linear-gradient(#051d4a,
+        #051d4a),
+      linear-gradient(#26e1ff,
+        #26e1ff);
+    background-blend-mode: normal,
+      normal;
+    border: solid 1px #0f3d7e;
+    margin-left: 12px;
+    line-height: 30px;
+    color: #fff;
+
+    .icon {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: 10px;
+      top: 4px;
+    }
+  }
+
+  .unit {
+    position: relative;
+    width: 606px;
+
+    margin-left: 12px;
+    margin-top: 10px;
+    height: 30px;
+
+    .input-box {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: inline-block;
+      width: 543px;
+      height: 30px;
+      line-height: 30px;
+      background: #051d4a;
+
+      background-blend-mode: normal,
+        normal;
+      border: solid 1px #0f3d7e;
+    }
+
+  }
+
+  .text {
+    width: 100%;
+    margin-left: 10px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #26e1ff;
+  }
+
+  label {
+    width: 56px;
+    height: 100%;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #26e1ff;
+  }
+
+  .line-massage {
+    margin-top: 24px;
+    .title {
+      .line,
+	  .tower,
+	  .details {
+		  position: relative;
+		  color: @base-font-color;
+		  font-size: 14px;
+	  }
+	  .line{
+		margin: 0 28px 0 12px;
+	  }
+	  .line:before{
+		  content: '';
+		  display: inline-block;
+		  width: 15px;
+		  height: 16px;
+		  background: url('../assets/imgaes/line-img.png');
+		  background-size: cover;
+		  margin-right: 8px;
+	  }
+	  .tower:before{
+		  content: '';
+		  display: inline-block;
+		  width: 22px;
+		  height: 18px;
+		  background: url('../assets/imgaes/tower-img.png');
+		  background-size: cover;
+		  margin-right: 8px;
+	  }
+	  .details{
+		  float: right;
+		  margin-right: 12px;
+	  }
+    }
+    // .massage-list{
+    //   overflow: auto;
+    //     margin-top: 6px;
+    //       overflow-y:visible;
+
+      .nav-list{
+        margin-top: 6px;
+        float: left;
+        width: 70px;
+        height: 323px;
+        background-image: linear-gradient(#051d4a,
+          #051d4a),
+        linear-gradient(#051d4a,
+          #051d4a);
+        background-blend-mode: normal,
+        normal;
+        margin-left: 1px;
+        .nav-item{
+          height: 34px;
+          line-height: 34px;
+          color: #26e1ff;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+      .tabCon{
+        margin-top: 6px;
+        float: left;
+        height: 323px;
+        width: 557px;
+        border-top: 1px solid #051d4a;
+        .tab-tilte {
+          width: 100%;
+        }
+
+        .tab-tilte li {
+          position: relative;
+          float: left;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          cursor: pointer;
+          color: #7fa1ca;
+          font-size: 14px;
+          padding: 0 22px;
+        }
+        .tab-tilte li:last-child::after,
+        .tab-tilte li:nth-child(2)::after,
+        .tab-tilte li:nth-child(3)::after
+        {
+          content: '';
+          display: inline-block;
+          width: 1px;
+          height: 14px;
+          position: absolute;
+          left: 0;
+          top: 12px;
+          background-color: #083279;
+          opacity: 0.45;
+        }
+
+        /* 点击对应的标题添加对应的背景颜色 */
+        .tab-tilte .active {
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 1px;
+          color: #26fff8;
+          text-align: center;
+          text-shadow: 5px 2px 6px #000;
+        }
+
+        .tab-content div {
+          margin-left: 22px;
+          // float: left;
+        }
+        .tab-content{
+          overflow: auto;
+          height: 266px;
+          .list{
+            width: 100%;
+            .list-item{
+              display: inline-block;
+              font-size: 14px;
+              color: #fff;
+              width: 104px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+   .tab-content::-webkit-scrollbar {
+      display: none
+    }
+  }
+
+
+// }

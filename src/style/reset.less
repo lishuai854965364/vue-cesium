@@ -1,0 +1,182 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  font-style: normal;
+}
+h1,h2,h3{
+  padding: 12px;
+}
+p {
+  line-height: 50px;
+  color: #333 ;
+  font-size: 36px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block;
+}
+// body {
+//  line-height: 1;
+// }
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input{
+  background: none;
+  outline: none;
+  border: none;
+  appearance:none;
+  -moz-appearance:none;
+  outline:none;//input标签聚焦不出现默认边框:
+  -webkit-appearance: none;//用于IOS下移除原生样式
+}
+//or:
+.clear{
+  clear: both;
+}
+input:focus{ outline:none; }//input标签聚焦不出现默认边框:
+.el-select {
+  width: 544px !important;
+  height: 30px !important;
+  background-blend-mode: normal,
+    normal;
+margin-left: 2px;
+}
+
+.el-input--suffix.el-input {
+  height: 30px !important;
+
+}
+.el-select .el-input__inner {
+  -webkit-appearance: none;
+  border-radius: 0 !important;
+  background: #051d4a !important;
+
+    border: solid 1px #0f3d7e !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  color:#26e1ff;
+  padding: 0 15px;
+
+
+}
+.el-input__icon{
+    line-height: 30px;
+}
+.el-icon-arrow-up:before{
+      // s
+      // position: absolute;
+      // top: 12px;
+      // right: 0;
+}
+.el-select-dropdown__item{
+  color:#26e1ff;
+
+}
+.el-select-dropdown{
+  background-color: #051d4a !important;
+	border: solid 1px #0f3d7e !important;
+}
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color:#051d4a !important;
+}
+
+.el-table{
+  // background-colo: red !important;
+}
+.el-table,
+.el-table__expanded-cell{
+  height: 100%;
+  background: none !important;
+  border: none;
+
+}
+.el-table td,
+.el-table th{
+  height: 34px !important;
+  padding: 0 !important;
+}
+.el-table th,
+.el-table tr{
+  background: none !important;
+
+}
+.cell{
+  font-size: 14px;
+  color: #26e1ff;
+}
+.el-table td,
+.el-table th.is-leaf{
+  border: none !important;
+}
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before{
+  content: '' !important;
+  height: 0 !important;
+}
+.el-tree-node:focus>.el-tree-node__content {
+  background:none !important;
+}
+.el-tree-node:focus>.el-tree-node__content:hover{
+  background:none !important;
+
+}
+.el-tree-node__content:hover {
+  background: none !important;
+}
+.el-checkbox__inner{
+      border: 1px solid #11f0ff !important;
+      background-color: none !important;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner{
+      background-color: #010c3e !important;
+      opacity: .8;
+}
